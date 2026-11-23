@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "home-energy-estimator"
+version = "0.1.0"
+description = "A lightweight CLI that estimates weekly or monthly electricity consumption from appliance power ratings and usage schedules, optionally providing \u00b15% confidence bounds."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+
+[project.scripts]
+"home-energy-estimator" = "home_energy_estimator:main"
+
+[project.urls]
+Repository = "https://github.com/ScobieWorks/home-energy-estimator"
+
+[tool.setuptools]
+py-modules = ["home_energy_estimator"]
